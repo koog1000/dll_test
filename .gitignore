@@ -1,3 +1,8 @@
+#dot files and folders
+.* 
+#except gitignore
+!.gitignore
+
 # Prerequisites
 *.d
 

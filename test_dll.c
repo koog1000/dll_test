@@ -20,7 +20,13 @@ EXPORT int _CALL_ mul(int num1, int num2){
   return num1 * num2;
 }
 
-EXPORT int _CALL_ incr_by_ref(int* num, int times)
+EXPORT int _CALL_ incr_by_ref(int* num)
+{
+    *num += 2;
+    return 0;
+}
+
+EXPORT int _CALL_ incr_by_ref_loop(int* num, int times)
 {
     for(int i=0; i<times; i++)
     {
