@@ -1,4 +1,4 @@
-GCC=mingw-gcc
+GCC=x86_64-w64-mingw32-gcc
 EXE=.exe
 SO_EXT=dll
 
