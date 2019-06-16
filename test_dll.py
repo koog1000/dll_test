@@ -12,7 +12,7 @@ print('C loop:', a, 'Time: ', time.monotonic()-start)
 start = time.monotonic()
 a = c_int(3)
 for _ in range(10000000):
-    test_lib.incr_by_ref_loop(byref(a))
+    test_lib.incr_by_ref(byref(a))
 print('Python loop calling dll:', a, 'Time: ', time.monotonic()-start)
 
 start = time.monotonic()
